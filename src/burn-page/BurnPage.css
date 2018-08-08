@@ -12,6 +12,31 @@
   box-shadow: 0 0 10px 3px rgba(119, 118, 118, 0.33);
 }
 
+.back{
+  padding: 10px 10px 10px 15px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 5px;
+}
+
+.back:after{
+  content:"";
+  display:block;
+  width: 8px;
+  height: 8px;
+  border-top:2px solid #d9d9d9;
+  border-left: 2px solid #d9d9d9;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 37%;
+  left: 5px;
+}
+
+/* .back:hover{
+  background-color: #d9d9d9;
+} */
+
+
 .burn-line {
   box-sizing: border-box;
 }
@@ -37,6 +62,13 @@
 .start-btn {
   float: right;
   margin-right: 20%;
+}
+
+.file-name {
+  margin-left: 20px;
+  min-width: 150px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .prg-area {
